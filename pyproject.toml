@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "word-analysis-api"
+version = "0.1.0"
+description = "A FastAPI API for word analysis."
+
+# Production dependencies go here
+dependencies = [
+    "fastapi==0.111.0",
+    "uvicorn[standard]==0.30.1",
+]
+
+[project.optional-dependencies]
+# Development dependencies go here
+dev = [
+    "pytest==8.2.2",
+    "commitizen==4.8.3",
+]
